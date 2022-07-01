@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
-const rootId = document.getElementById("root");
+const rootId = document.getElementById("main");
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,7 +15,7 @@ ReactDOM.render(
 
 reportWebVitals();
 if (module.hot && process.env.NODE_ENV === "development") {
-  module.hot.accept("./App", () => {
+  module.hot.accept("./components/App", () => {
     ReactDOM.render(
       <React.StrictMode>
         <App />

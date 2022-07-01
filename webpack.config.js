@@ -25,6 +25,10 @@ module.exports = ({ mode } = { mode: "production" }) => {
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
                     loader: "babel-loader"
+                },
+                {
+                    test: /\.(jpe?g|png|gif|svg)$/i, 
+                    loader: 'file-loader'
                 }
             ]
         },
