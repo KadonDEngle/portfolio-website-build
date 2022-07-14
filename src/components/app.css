@@ -110,6 +110,15 @@ section .container {
 }
 
 
+#canvas {
+  height: calc(100vh + 54px);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 
 
 
@@ -137,12 +146,12 @@ section .container {
 }
 
 .btn .fas  {
-  animation: rotate90back 0.5s;
+  animation: rotate90back 0.2s;
   animation-fill-mode: backwards;
 }
 
 .btn:hover .fas  {
-  animation: rotate90 0.5s;
+  animation: rotate90 0.2s;
   animation-fill-mode: forwards;
 }
 
@@ -216,6 +225,12 @@ section:nth-child(1) .text {
   color: var(--light);
   pointer-events: none;
   margin: 0 0 20px 0;
+  z-index: 3;
+}
+
+section:nth-child(1) .btn {
+  position: relative;
+  z-index: 3;
 }
 
 
@@ -226,7 +241,7 @@ section:nth-child(2) {
 
 
 section:nth-child(2) img {
-  width: 300px;
+  width: 50vw;
 }
 
 section:nth-child(2) .skills-wrapper {
@@ -235,6 +250,7 @@ section:nth-child(2) .skills-wrapper {
 
 section:nth-child(2) .text-wrap {
   max-width: 550px;
+  margin: 0 50px 0 0;
 }
 
 section:nth-child(2) .text.primary {
@@ -467,6 +483,7 @@ footer .footnote {
 
   section:nth-child(2) img {
     margin: 0 0 30px 0;
+    width: 100vw;
   }
 
   section:nth-child(2) .text.secondary {
@@ -480,6 +497,7 @@ footer .footnote {
 
   section:nth-child(2) .text-wrap {
     max-width: 90%;
+    margin: 0;
   }
 
   section:nth-child(2) {

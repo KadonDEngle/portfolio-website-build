@@ -1,10 +1,12 @@
 import React, { component, useState, useRef, useEffect } from "react";
 import { hot } from "react-hot-loader";
 import {Link} from 'react-scroll';
+import { Waypoint } from 'react-waypoint';
 import NavBar from './NavBar/NavBar';
 import ContactForm from './ContactForm/ContactForm';
 import './app.css';
-import img from '../Assets/KadonArt.png';
+import img from '../Assets/k2.png';
+
 
 function App() {
     return (
@@ -12,7 +14,7 @@ function App() {
 
 
             <section id="home" className="flex">
-                <div className="flex">
+                <div className="flex container">
                     <div className="text">
                         Hello, I'm <span className="highlight bold">Kadon Engle</span>.
                         <br/>
@@ -33,7 +35,7 @@ function App() {
 
             <section id="about">
                 <div className="containter flex">
-                    <div className="bold title animate__animated animate__bounce">ABOUT</div>
+                    <div className="bold title">ABOUT</div>
                     <div className="title-bar"></div>
                 </div>
                 <div className="flex row skills-wrapper">
@@ -43,7 +45,7 @@ function App() {
                     <div className="flex text-wrap">
                         <div className="text primary bold">WORK</div>
                         <div className="text secondary">
-                            I'm a currently doing front-end web development and graphic design
+                            I'm currently doing front-end web development and graphic design
                             for <span className="highlight bold">Patio Roof Riser </span>
                             in Springfield, OR.
                             <br/>
